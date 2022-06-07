@@ -1,6 +1,6 @@
 // J'importe le css du header et le logo crotte
 import'./Header.css'
-import crotte from '../App/poop.png';
+import crotte from '../img/poop.png';
 
 // j'exporte une fonction header qui retourne mon header
 export default function Header(){

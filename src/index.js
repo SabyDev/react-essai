@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     {/* j'injecte le header, le main et le footer dans ma constante root */}
     <Header />
+    
     <App />
     <Footer />
   </React.StrictMode>

@@ -1,5 +1,5 @@
 // J'importe le logo, le css de app
-import logo from './pug.png';
+import logo from '../img/pug.png';
 import '../App/App.css';
 
 
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       
       <main className="App-main">
+        <h1>Bienvenue chez le PUG</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>          
           N'embrouille pas Le PUG !!!!!

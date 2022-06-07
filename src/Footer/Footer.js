@@ -1,6 +1,6 @@
 // J'importe le css du footer et le logo crotte
 import './Footer.css'
-import crotte from '../App/poop.png';
+import crotte from '../img/poop.png';
 
 // j'exporte une fonction footer qui retourne mon footer
 export default function Footer(){
