@@ -1,21 +1,14 @@
+// J'importe le logo, le css de app
 import logo from './pug.png';
-import crotte from './poop.png';
 import '../App/App.css';
 
+
+// je crée une foncton app qui me renvoie le main
 function App() {
   return (
     
     <div className="App">
-      <header className="App-header">
-        <img src={crotte} className="logo-crotte" alt="logo de pug compagnie" />
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      
       <main className="App-main">
         <img src={logo} className="App-logo" alt="logo" />
         <p>          
@@ -29,13 +22,7 @@ function App() {
         >
           Learn React
         </a>
-      </main>
-      <footer>
-        <p>
-           ©PugCompagnie <img src={crotte} alt="crotte arc-en-ciel" />
-        </p>
-        
-      </footer>
+      </main>      
     </div>
   );
 }
