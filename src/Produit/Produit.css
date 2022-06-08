@@ -1,0 +1,15 @@
+.Produit{
+  background-color: #282c34;
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  justify-content: space-evenly;
+  padding-bottom: 120px;
+}
+.Produit>li{
+    list-style: none;
+    border: #fff ridge 5px;
+    padding: 15px 25px 15px;
+    cursor: pointer;
+
+}

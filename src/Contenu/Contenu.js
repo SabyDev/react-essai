@@ -1,6 +1,6 @@
 // J'importe le logo, le css de app
 import logo from '../img/pug.png';
-import '../App/App.css';
+import '../Contenu/Contenu.css';
 
 
 
