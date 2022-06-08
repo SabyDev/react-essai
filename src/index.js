@@ -7,7 +7,7 @@ import Emoji from './Emoji/Emoji';
 import Footer from '../src/Footer/Footer'
 import Header from '../src/Header/Header'
 import Produit from '../src/Produit/Produit'
-
+import Message from '../src/Message/Message'
 // injecter du code dans l index html via #root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +17,8 @@ root.render(
     <Header />
     <Emoji/>
     <Contenu />
+    <Message messagePasse="Les Props c'est cool" prenom= ' dit lilly' />
+    <Message messagePasse="mais pas trop" prenom= 'repond lulu' />
     <Produit/>
     <Footer />
   </React.StrictMode>

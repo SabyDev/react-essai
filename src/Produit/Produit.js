@@ -7,16 +7,19 @@ const Produits = [
    {name: '🍇 raisin' , quantity: 4},
    {name: '🍒 cerise' , quantity: 5}
 ]
-const fruits =[Produits.quantity]
-function plus (){
-fruits.map((fruit) => fruit++)
+
+function moins (){
+    for(let i = [Produits.quantity]; i>[Produits.quantity]; i++ ){
+         i--
+    }
+    console.log(moins);
 }
 export default function Produit(){
     return(
       <div className='Produit'>
           {Produits.map(
               produit => (
-                  <li key= {produit} onClick={plus}>{produit.name} {produit.quantity}</li>
+                  <li key= {produit} onClick={event => ({moins})}>{produit.name} : {produit.quantity}</li>
               )  
           )            
           }
