@@ -3,6 +3,7 @@ import logo from '../img/pug.png';
 import '../App/App.css';
 
 
+
 // je crée une foncton app qui me renvoie le main
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a>  
       </main>      
     </div>
   );
