@@ -1,7 +1,9 @@
 import './CardProduit.css';
 export default function CardProduit(props){
     return( 
+        // je crée une figure
         <figure>
+            {/* je mets mes éléments et j'appelle les props */}
         <img className='photo' src={props.image} alt="" />
         <figcaption>
         <h2>{props.titre}</h2>            

@@ -46,34 +46,60 @@ import CardProduit from '../CardProduit/CardProduit';
 //         </div>
 //     )
 //     }
+// Je fais un tableau qui enregistre mes objets
 const produits = [
     {
       image: 'https://i.pinimg.com/originals/96/a0/f7/96a0f781726056493714783f2e094c34.jpg',
       id: 1,
-      titre: 'siège gamer très actif',
+      titre: 'siège gamer actif',
       prix: '300€',
-      description: 'Siège GAMER toilette assise confort',
+      description: 'Siège GAMER toilette assise confort, pour ne jamais perdre le fil de la pensée',
       avis:'⭐⭐⭐⭐'
     },
     {
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkweyEs1FWWhHggwTL1jLDb48RL1F3yhCjJp3Ox6RdI80WecO1LVlhQOwPPrvvoenMfog&usqp=CAU',
+      image: 'http://koreus.cdn.li/media/201409/110-insolite-17.jpg',
       id: 2,
-      titre: 'toilettes Gamer',
+      titre: 'Siège Gamer',
       prix: '70€',
-      description: 'toilette e-tech',
+      description: 'toilette e-tech basic',
       avis: '⭐⭐⭐'
     },
     {
       image:
         'https://static-pepper.dealabs.com/comments/raw/PSPyv/35694512_1/fs/1090x545/qt/80/35694512_1.jpg',
       id: 3,
-      titre: 'siège gamer travailler ',
-      prix: '120€',
+      titre: 'siège Gamer  ',
+      prix: '2000€',
+      description: 'Siège GAMER toilette assise confort',
+      avis: '⭐⭐⭐⭐'
+    },
+    {
+      image: 'https://m.media-amazon.com/images/I/71VpOJXp6SL._AC_SX425_.jpg',
+      id: 1,
+      titre: 'siège gamer actif',
+      prix: '300€',
+      description: 'Siège GAMER toilette assise confort, pour ne jamais perdre le fil de la pensée',
+      avis:'⭐⭐⭐⭐'
+    },
+    {
+      image: 'https://m.media-amazon.com/images/I/61VCgjuzB1L._AC_SX425_.jpg',
+      id: 2,
+      titre: 'Siège Gamer',
+      prix: '70€',
+      description: 'toilette e-tech basic',
+      avis: '⭐⭐⭐'
+    },
+    {
+      image:
+        'https://cdn.manomano.com/images/images_products/9440946/P/17699921_1.jpg',
+      id: 3,
+      titre: 'siège Gamer  ',
+      prix: '2000€',
       description: 'Siège GAMER toilette assise confort',
       avis: '⭐⭐⭐⭐'
     },
   ];
-
+// Je crée une fiche produits
 export default function Produit() {
     const listeProduits = produits.map((produit) => (
         <CardProduit 
@@ -85,5 +111,6 @@ export default function Produit() {
             avis={produit.avis}
             />
     ))
-    return listeProduits;
+    return <div className='parent'>    
+      {listeProduits}</div>;
 }

@@ -1,7 +1,8 @@
 // J'importe le logo, le css de app
 import logo from '../img/pug.png';
 import '../Contenu/Contenu.css';
-
+import '../CardProduit/CardProduit'
+import CardProduit from '../CardProduit/CardProduit';
 
 
 // je crée une foncton app qui me renvoie le main
@@ -24,6 +25,8 @@ function App() {
         >
           Learn React
         </a>  
+
+    
       </main>      
     </div>
   );

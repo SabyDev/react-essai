@@ -1,30 +1,7 @@
-/* html{
-    background-color:#282c34 ;
-}
-.msg{
-    margin-left: 25px;
-    padding: 25px;
-    width: 300px;
-    background-color: red;  
+
+.parent{
     display: grid;
-    margin-bottom: 25px;
-
-  color: #000;
-  font-size: 25px;
-  justify-content: space-evenly;
-
- 
-
+    grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+   justify-items: center;
 }
-.msg>img{
-    width: 280px;
-}
-.msg>li{
-    width: 280px;
-    list-style: none;
-    border: #fff ridge 5px;
-    padding: 15px 25px 15px;
-    cursor: pointer;
-
-
-} */
