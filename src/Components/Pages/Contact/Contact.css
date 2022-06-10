@@ -19,7 +19,13 @@ input[type="submit" i]{
     width: 20%;
     height: 4vh;
     border: ridge 5px rgb(197, 190, 190);
+    cursor: pointer;
+    font-size: 20px;
     
+}
+input[type="submit" i]:hover{
+    background-color: blueviolet;
+    color: #fff;
 }
 .champs{
     display: flex;
@@ -31,4 +37,10 @@ input[type="submit" i]{
 label{
     margin-bottom: 50px;
     font-size: 25px;
+}
+select{
+    width: 5%;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 2%;
 }
