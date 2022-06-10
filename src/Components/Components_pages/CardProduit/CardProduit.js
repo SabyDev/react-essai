@@ -1,4 +1,4 @@
-import './CardProduit.css';
+import '../CardProduit/CardProduit.css';
 export default function CardProduit(props){
     return( 
         // je crée une figure

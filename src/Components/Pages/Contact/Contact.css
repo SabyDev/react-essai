@@ -1,0 +1,34 @@
+.formulaire{
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+.formulaire>h1{
+text-align: center;
+margin-top: 10vh;
+margin-bottom: 10vh;
+}
+.formulaire input{
+width: 50%;
+height: 3vh;
+margin-left: 1%;
+}
+input[type="submit" i]{
+    width: 20%;
+    height: 4vh;
+    border: ridge 5px rgb(197, 190, 190);
+    
+}
+.champs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+    
+}
+label{
+    margin-bottom: 50px;
+    font-size: 25px;
+}

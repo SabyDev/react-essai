@@ -1,8 +1,8 @@
 // J'importe le logo, le css de app
-import logo from '../img/pug.png';
-import '../Contenu/Contenu.css';
-import '../CardProduit/CardProduit'
-import CardProduit from '../CardProduit/CardProduit';
+import logo from '../../../style/assets/img/pug.png';
+import './Contenu.css';
+import '../../Components_pages/CardProduit/CardProduit'
+
 
 
 // je crée une foncton app qui me renvoie le main

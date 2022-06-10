@@ -1,6 +1,8 @@
 // J'importe le css du header et le logo crotte
 import'./Header.css'
-import crotte from '../img/poop.png';
+import crotte from '../../../style/assets/img/poop.png';
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 // j'exporte une fonction header qui retourne mon header
 export default function Header(){
@@ -9,11 +11,12 @@ export default function Header(){
         <img src={crotte} className="logo-crotte" alt="logo de pug compagnie" />
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="produit">Déguisements</Link></li>
+            <li><Link to="contact">Contact</Link></li>
           </ul>
         </nav>
+        <Outlet/>
       </header>
     )
 }

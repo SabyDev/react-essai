@@ -1,6 +1,5 @@
 import './Produit.css'
-import '../CardProduit/CardProduit'
-import CardProduit from '../CardProduit/CardProduit';
+import CardProduit from '../../Components_pages/CardProduit/CardProduit';
 
 // const Produits = [
 //    {name: '🍎 pomme' , quantity: 1},
@@ -49,53 +48,53 @@ import CardProduit from '../CardProduit/CardProduit';
 // Je fais un tableau qui enregistre mes objets
 const produits = [
     {
-      image: 'https://i.pinimg.com/originals/96/a0/f7/96a0f781726056493714783f2e094c34.jpg',
+      image: 'https://m.media-amazon.com/images/I/61Mzi10F24L._AC_SX425_.jpg',
       id: 1,
-      titre: 'siège gamer actif',
-      prix: '300€',
-      description: 'Siège GAMER toilette assise confort, pour ne jamais perdre le fil de la pensée',
+      titre: 'Dark Vador',
+      prix: '30€',
+      description: 'Déguisement pour Pug.',
       avis:'⭐⭐⭐⭐'
     },
     {
-      image: 'http://koreus.cdn.li/media/201409/110-insolite-17.jpg',
+      image: 'https://jamaissansmaurice.com/wp-content/uploads/2014/09/starwars-costume-dewback-pour-chien.jpg',
       id: 2,
-      titre: 'Siège Gamer',
+      titre: 'stormtroopers',
       prix: '70€',
-      description: 'toilette e-tech basic',
+      description: 'Déguidement pour Pug',
       avis: '⭐⭐⭐'
     },
     {
       image:
-        'https://static-pepper.dealabs.com/comments/raw/PSPyv/35694512_1/fs/1090x545/qt/80/35694512_1.jpg',
+        'https://m.media-amazon.com/images/I/812vDF+PCKL._AC_SX466_.jpg',
       id: 3,
-      titre: 'siège Gamer  ',
-      prix: '2000€',
-      description: 'Siège GAMER toilette assise confort',
+      titre: 'Maître Yoda ',
+      prix: '40€',
+      description: 'Déguidement pour Pug',
       avis: '⭐⭐⭐⭐'
     },
     {
-      image: 'https://m.media-amazon.com/images/I/71VpOJXp6SL._AC_SX425_.jpg',
+      image: 'https://www.boutiqusedisney.com/media/catalog/product/cache/1/image/9b11fff56e790d956f21bc4068412cd6/2/8/2842046580002m/disney-store-deguisement-clochette-pour-chiens-pas-cher-31.jpg',
       id: 1,
-      titre: 'siège gamer actif',
-      prix: '300€',
-      description: 'Siège GAMER toilette assise confort, pour ne jamais perdre le fil de la pensée',
+      titre: 'Fée Clochette',
+      prix: '30€',
+      description: 'Déguidement pour Pug',
       avis:'⭐⭐⭐⭐'
     },
     {
-      image: 'https://m.media-amazon.com/images/I/61VCgjuzB1L._AC_SX425_.jpg',
+      image: 'https://static.weezbe.com/cmachambre/Images/products/p_3106G_210426171553.jpg',
       id: 2,
-      titre: 'Siège Gamer',
-      prix: '70€',
-      description: 'toilette e-tech basic',
+      titre: 'Cow Boy',
+      prix: '25€',
+      description: 'Déguidement pour Pug',
       avis: '⭐⭐⭐'
     },
     {
       image:
-        'https://cdn.manomano.com/images/images_products/9440946/P/17699921_1.jpg',
+        'https://www.cdiscount.com/pdt2/1/7/8/3/550x550/auc3664996339178/rw/deguisement-pour-chien-joueur-de-guitare-costume.jpg',
       id: 3,
-      titre: 'siège Gamer  ',
-      prix: '2000€',
-      description: 'Siège GAMER toilette assise confort',
+      titre: 'Guitariste',
+      prix: '20€',
+      description: 'Déguidement pour Pug',
       avis: '⭐⭐⭐⭐'
     },
   ];
@@ -111,6 +110,13 @@ export default function Produit() {
             avis={produit.avis}
             />
     ))
-    return <div className='parent'>    
-      {listeProduits}</div>;
+   
+    return (
+    <div>
+      <h1>Déguisements</h1>
+    <div className='parent'>           
+      {listeProduits}</div>
+      </div>);
 }
+
+
