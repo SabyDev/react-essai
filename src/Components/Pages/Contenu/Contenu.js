@@ -1,12 +1,15 @@
 // J'importe le logo, le css de app
 import logo from '../../../style/assets/img/pug.png';
 import './Contenu.css';
-import '../../Components_pages/CardProduit/CardProduit'
+import '../../Components_pages/CardProduit/CardProduit';
+import { useState } from 'react';
 
 
 
 // je crée une foncton app qui me renvoie le main
 function App() {
+  const initialCount =0;
+  const [count, setCount] = useState(initialCount);
   return (
     
     <div className="App">
@@ -17,19 +20,19 @@ function App() {
         <p>          
           N'embrouille pas Le PUG !!!!!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>  
-
+         
+  
+    <div className='compteur'>
+      Total : {count}
+      <button onClick={() => setCount(initialCount)}>Réinitialiser</button>
+      <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>
+      <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
+    </div>
+  
     
       </main>      
     </div>
-  );
+  )
 }
 
 export default App;

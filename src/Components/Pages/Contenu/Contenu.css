@@ -14,7 +14,18 @@
    align-items: center;
   
   }
-  
+  .compteur{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;    
+  }
+  .compteur>button{
+    margin-top: 20px;
+    color: #fff;
+  }
+  .compteur>button:hover{   
+    color:rgb(138, 44, 226);
+  }
   
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {

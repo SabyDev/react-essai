@@ -24,7 +24,7 @@ input[type="submit" i]{
     
 }
 input[type="submit" i]:hover{
-    background-color: blueviolet;
+    background-color: rgb(138, 44, 226);
     color: #fff;
 }
 .champs{

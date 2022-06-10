@@ -13,7 +13,7 @@ export default function Contact (){
         
        const validationTaille = (event) => {
         event.preventDefault ();
-        alert (`'Vous avez selectionner la taille' : ${Taille}`)
+        alert (`Vous avez selectionner la taille : ${Taille}  valider ?`)
    }
     return (
         <div className="formulaire">
