@@ -9,6 +9,7 @@ import Footer from './Components/Components_pages/Footer/Footer';
 import Header from './Components/Components_pages/Header/Header';
 import Produit from '../src/Components/Pages/Produit/Produit';
 import Contact from './Components/Pages/Contact/Contact';
+import Post from './Components/Components_pages/Post/Post'
 // injecter du code dans l index html via #root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
       <Route index element={<Contenu/>}/>
       <Route path='emoji' element={<Emoji/>}/>      
       <Route path='contact'element={<Contact/>}/>
+      <Route path='post'element={<Post/>}/>
       <Route path='produit' element={<Produit/>}/>
       <Route path='footer' element={<Footer/>}/>
       </Route>

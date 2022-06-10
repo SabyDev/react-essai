@@ -1,10 +1,12 @@
 import './Contact.css';
 import React from 'react';
+// importation le Hook useState de React :
 import { useState } from 'react';
 
 
 
 export default function Contact (){
+      // Déclare des nouvelles variables d'état
         const[name,setName]= useState("");
         const[firstName,setFirstName]= useState("");
         const[PugName,setPugName]= useState("");
@@ -12,6 +14,7 @@ export default function Contact (){
         const[Taille, setTaille] = useState("s");       
         
        const validationTaille = (event) => {
+        // pour éviter la rafraichissement de la page
         event.preventDefault ();
         alert (`Vous avez selectionner la taille : ${Taille}  valider ?`)
    }

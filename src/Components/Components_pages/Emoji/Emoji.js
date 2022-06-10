@@ -1,29 +1,8 @@
+// J'importe le css du header 
 import './Emoji.css'
 const montrerEmoji = event => alert(event.target.id);
-// export default function Emoji(){
-//     return (
-//       <ul>
-//           <li>
-//               <button onClick={event => alert(event.target.id)} >
-// <span id='excellent'> 😎 </span>
-// </button >
-//           </li>
-//           <li>
-//           <button onClick={montrerEmoji} >
-// <span id='bien'>  🙂  </span>
-// </button>
-//           </li>
-//           <li>
-//               <button onClick={() => alert("cliqué !")} >
-// <span id='bad'>  😩  </span>
-// </button>
-//           </li>
-//       </ul>
+//
 
-
-
-//     )
-// }
 //  On crée un tableau avec les emoji et on donne des noms aux emoji
 const emojis = [
 {
@@ -52,15 +31,3 @@ export default function Emoji(){
     )
 }
 
-// const planetes = [
-//     "Terre",
-//     "Saturne",
-//     "Pluton"
-// ];
-// export default function Emoji(){
-//     return (
-//         <>
-//         {planetes.map(planete => <div key={planete}>{planete}</div>)}
-//             </>
-//     )
-// }

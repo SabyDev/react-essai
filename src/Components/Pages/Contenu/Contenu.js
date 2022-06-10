@@ -8,7 +8,9 @@ import { useState } from 'react';
 
 // je crée une foncton app qui me renvoie le main
 function App() {
+  // je réinitialise la constante à 0
   const initialCount =0;
+    // Déclare une nouvelle variable d'état, que l'on va appeler « count »
   const [count, setCount] = useState(initialCount);
   return (
     
